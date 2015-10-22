@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mylayout" >
+
+    <FrameLayout
+        android:id="@+id/mylayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+       <!--  <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/bacaground1" />
+ -->
+    <com.parth.util.TouchImageViewx
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+           
+             />
+          
+          <!-- <com.parth.util.TouchImageView
+            android:id="@+id/imageView4"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="50dp"
+             />
+
+        <com.parth.util.TouchImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="50dp"
+            /> -->
+
+       <!--  <com.parth.util.TouchImageView
+            android:id="@+id/imageView4"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/background7" /> -->
+
+</FrameLayout>
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mylayout2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="52dp"
+        android:text="SelectImage" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="34dp"
+        android:text="Share " />
+
+</RelativeLayout>
